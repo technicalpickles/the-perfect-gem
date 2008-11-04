@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Josh Nichols"]
-  s.date = %q{2008-10-26}
+  s.date = %q{2008-11-03}
   s.description = %q{TODO}
   s.email = %q{josh@technicalpickles.com}
   s.homepage = %q{http://github.com/technicalpickles/the-perfect-gem}
