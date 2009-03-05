@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{the-perfect-gem}
-  s.version = "3.1.4"
+  s.version = nil
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Josh Nichols"]
