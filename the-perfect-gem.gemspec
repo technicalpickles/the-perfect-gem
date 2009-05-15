@@ -2,24 +2,28 @@
 
 Gem::Specification.new do |s|
   s.name = %q{the-perfect-gem}
-  s.version = "3.1.6"
+  s.version = "3.1.10"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Josh Nichols"]
-  s.date = %q{2009-05-04}
+  s.date = %q{2009-05-15}
   s.description = %q{TODO}
   s.email = %q{josh@technicalpickles.com}
   s.extra_rdoc_files = [
     "LICENSE",
-    "README"
+     "README"
   ]
   s.files = [
-    "LICENSE",
-    "Rakefile",
-    "VERSION.yml",
-    "lib/the_perfect_gem.rb",
-    "test/test_helper.rb",
-    "test/the_perfect_gem_test.rb"
+    ".gitignore",
+     "LICENSE",
+     "README",
+     "Rakefile",
+     "VERSION",
+     "VERSION.yml",
+     "lib/the_perfect_gem.rb",
+     "test/test_helper.rb",
+     "test/the_perfect_gem_test.rb",
+     "the-perfect-gem.gemspec"
   ]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/technicalpickles/the-perfect-gem}
@@ -30,7 +34,7 @@ Gem::Specification.new do |s|
   s.summary = %q{TODO}
   s.test_files = [
     "test/test_helper.rb",
-    "test/the_perfect_gem_test.rb"
+     "test/the_perfect_gem_test.rb"
   ]
 
   if s.respond_to? :specification_version then
