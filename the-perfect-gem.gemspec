@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/technicalpickles/the-perfect-gem}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
+  s.rubyforge_project = %q{pickles}
   s.rubygems_version = %q{1.3.1}
   s.summary = %q{TODO}
   s.test_files = [

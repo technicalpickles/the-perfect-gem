@@ -11,8 +11,10 @@ begin
     s.email = "josh@technicalpickles.com"
     s.homepage = "http://github.com/technicalpickles/the-perfect-gem"
     s.description = "TODO"
+    s.rubyforge_project = 'pickles'
     s.authors = ["Josh Nichols"]
   end
+  Jeweler::RubyforgeTasks.new 
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
 end
@@ -36,5 +38,6 @@ Rcov::RcovTask.new do |t|
   t.test_files = FileList['test/*_test.rb']
   t.verbose = true
 end
+
 
 task :default => :rcov
