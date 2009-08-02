@@ -13,7 +13,7 @@ begin
     s.rubyforge_project = 'pickles'
     s.authors = ["Josh Nichols"]
   end
-  #Jeweler::RubyforgeTasks.new 
+  Jeweler::RubyforgeTasks.new 
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
 end
