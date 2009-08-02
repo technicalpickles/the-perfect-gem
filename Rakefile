@@ -10,7 +10,6 @@ begin
     s.summary = "the perfect gem (a testing gem for jeweler)"
     s.email = "josh@technicalpickles.com"
     s.homepage = "http://github.com/technicalpickles/the-perfect-gem"
-    s.description = "TODO"
     s.rubyforge_project = 'pickles'
     s.authors = ["Josh Nichols"]
   end
