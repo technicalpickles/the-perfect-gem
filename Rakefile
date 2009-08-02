@@ -3,6 +3,7 @@ require 'rake/testtask'
 require 'rake/rdoctask'
 require 'rcov/rcovtask'
 
+$LOAD_PATH.unshift "/Users/nichoj/code/active/jeweler/lib"
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |s|
