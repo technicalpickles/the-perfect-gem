@@ -7,7 +7,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |s|
     s.name = "the-perfect-gem"
-    s.summary = "TODO"
+    s.summary = "the perfect gem (a testing gem for jeweler)"
     s.email = "josh@technicalpickles.com"
     s.homepage = "http://github.com/technicalpickles/the-perfect-gem"
     s.description = "TODO"
