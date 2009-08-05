@@ -1,6 +1,5 @@
 require 'rake'
 require 'rake/testtask'
-require 'rake/rdoctask'
 require 'rcov/rcovtask'
 
 $LOAD_PATH.unshift "/Users/nichoj/code/active/jeweler/lib"
@@ -14,7 +13,9 @@ begin
     s.rubyforge_project = 'pickles'
     s.authors = ["Josh Nichols"]
   end
-  Jeweler::RubyforgeTasks.new 
+  Jeweler::RubyforgeTasks.new do |rubyforge|
+    rubyforge.doc_task = "yard"
+  end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
 end
@@ -25,13 +26,15 @@ Rake::TestTask.new do |t|
   t.verbose = false
 end
 
-Rake::RDocTask.new do |rdoc|
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title    = 'Jeweler'
-  rdoc.options << '--line-numbers' << '--inline-source'
-  rdoc.rdoc_files.include('README*')
-  rdoc.rdoc_files.include('lib/**/*.rb')
+begin
+  require 'yard'
+  YARD::Rake::YardocTask.new(:yardoc)
+rescue LoadError
+  task :yardoc do
+    abort "RCov is not available. In order to run rcov, you must: sudo gem install spicycode-rcov"
+  end
 end
+
 
 Rcov::RcovTask.new do |t|
   t.libs << "test"
