@@ -14,7 +14,7 @@ begin
     s.authors = ["Josh Nichols"]
   end
   Jeweler::RubyforgeTasks.new do |rubyforge|
-    rubyforge.doc_task = "yard"
+    rubyforge.doc_task = "yardoc"
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
