@@ -8,6 +8,7 @@ begin
   Jeweler::Tasks.new do |s|
     s.name = "the-perfect-gem"
     s.summary = "the perfect gem (a testing gem for jeweler)"
+    s.description = "the perfect gem (a testing gem for jeweler)"
     s.email = "josh@technicalpickles.com"
     s.homepage = "http://github.com/technicalpickles/the-perfect-gem"
     s.rubyforge_project = 'pickles'
@@ -31,7 +32,7 @@ begin
   YARD::Rake::YardocTask.new(:yardoc)
 rescue LoadError
   task :yardoc do
-    abort "RCov is not available. In order to run rcov, you must: sudo gem install spicycode-rcov"
+    abort "YARD is not available. In order to run yard, you must: sudo gem install yard"
   end
 end
 
