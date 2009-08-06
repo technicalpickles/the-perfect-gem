@@ -13,6 +13,7 @@ begin
     s.homepage = "http://github.com/technicalpickles/the-perfect-gem"
     s.rubyforge_project = 'pickles'
     s.authors = ["Josh Nichols"]
+    s.add_development_dependency "thoughtbot-shoulda"
   end
   Jeweler::RubyforgeTasks.new do |rubyforge|
     rubyforge.doc_task = "yardoc"
