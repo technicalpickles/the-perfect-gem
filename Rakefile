@@ -2,7 +2,7 @@ require 'rake'
 require 'rake/testtask'
 require 'rcov/rcovtask'
 
-$LOAD_PATH.unshift "/Users/nichoj/code/active/jeweler/lib"
+$LOAD_PATH.unshift "/Users/technicalpickles/code/active/jeweler/lib"
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |s|
@@ -19,9 +19,8 @@ begin
     rubyforge.doc_task = "yardoc"
   end
 
-  Jeweler::GemcutterTasks.new
 rescue LoadError
-  puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
+  puts "Jeweler not available. Install it with: gem install jeweler"
 end
 
 Rake::TestTask.new do |t|
