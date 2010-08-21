@@ -9,9 +9,11 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Josh Nichols"]
-  s.date = %q{2010-08-12}
+  s.date = %q{2010-08-13}
+  s.default_executable = %q{blah}
   s.description = %q{the perfect gem (a testing gem for jeweler)}
   s.email = %q{josh@technicalpickles.com}
+  s.executables = ["blah"]
   s.extra_rdoc_files = [
     "LICENSE",
     "README"
