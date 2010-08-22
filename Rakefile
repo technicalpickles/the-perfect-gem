@@ -15,7 +15,7 @@ begin
     s.authors = ["Josh Nichols"]
     s.add_development_dependency "thoughtbot-shoulda"
   end
-  Jeweler::GemcutterTasks.new
+  Jeweler::RubygemsTasks.new
   Jeweler::RubyforgeTasks.new do |rubyforge|
     rubyforge.doc_task = "yardoc"
   end
